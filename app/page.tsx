@@ -86,13 +86,26 @@ export default function Home() {
               </p>
               <div className="flex gap-4 mt-8">
                 <Button variant="outline" className="rounded-full border-amber-600 text-amber-800 hover:bg-amber-100">
-                  <Github className="mr-2 h-4 w-4" /> GitHub
+                  <Github className="mr-2 h-4 w-4" />
+                  <Link href="https://github.com/0xQuilox" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                  </Link>
                 </Button>
                 <Button variant="outline" className="rounded-full border-amber-600 text-amber-800 hover:bg-amber-100">
-                  <Linkedin className="mr-2 h-4 w-4" /> LinkedIn
+                  <Linkedin className="mr-2 h-4 w-4" />
+                  <Link
+                    href="https://www.linkedin.com/in/miftahudeen-tajudeen-a18179366"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    LinkedIn
+                  </Link>
                 </Button>
                 <Button variant="outline" className="rounded-full border-amber-600 text-amber-800 hover:bg-amber-100">
-                  <Twitter className="mr-2 h-4 w-4" /> Twitter
+                  <Twitter className="mr-2 h-4 w-4" />
+                  <Link href="https://x.com/TrQuilox87" target="_blank" rel="noopener noreferrer">
+                    Twitter
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -365,15 +378,30 @@ export default function Home() {
               <p className="mt-2">Blockchain Developer & Security Researcher</p>
             </div>
             <div className="flex space-x-6">
-              <Link href="#" className="hover:text-amber-400 transition-colors">
+              <Link
+                href="https://github.com/0xQuilox"
+                className="hover:text-amber-400 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Github className="h-6 w-6" />
                 <span className="sr-only">GitHub</span>
               </Link>
-              <Link href="#" className="hover:text-amber-400 transition-colors">
+              <Link
+                href="https://www.linkedin.com/in/miftahudeen-tajudeen-a18179366"
+                className="hover:text-amber-400 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Linkedin className="h-6 w-6" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="#" className="hover:text-amber-400 transition-colors">
+              <Link
+                href="https://x.com/TrQuilox87"
+                className="hover:text-amber-400 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Twitter className="h-6 w-6" />
                 <span className="sr-only">Twitter</span>
               </Link>
