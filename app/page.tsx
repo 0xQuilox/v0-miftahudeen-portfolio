@@ -1,7 +1,19 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ChevronRight, Code, Shield, FileCode, Search, Send, Github, Linkedin, Twitter, Music } from "lucide-react"
+import {
+  ChevronRight,
+  Code,
+  Shield,
+  FileCode,
+  Search,
+  Send,
+  Github,
+  Linkedin,
+  Twitter,
+  Music,
+  CreditCard,
+} from "lucide-react"
 import Navbar from "@/components/navbar"
 
 export default function Home() {
@@ -227,7 +239,37 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* New Playsion Project */}
+            {/* Nova3 Project */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-amber-800 flex items-center justify-center">
+                <CreditCard className="h-16 w-16 text-amber-100" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-amber-800 mb-2">Nova3</h3>
+                <p className="text-amber-700 mb-4">
+                  A blockchain platform empowering users to pay for streaming services like Netflix, Prime, X, Spotify,
+                  and more, plus e-commerce purchases on Amazon, Walmart, and AliExpress, using USDC stablecoin. Fast,
+                  secure, and seamless transactions, all in one place.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Blockchain</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">USDC</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Payments</span>
+                </div>
+                <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
+                  <Link
+                    href="https://v0-quillox-portfolio.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex justify-center"
+                  >
+                    View Project
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Playsion Project */}
             <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
               <div className="h-48 bg-amber-800 flex items-center justify-center">
                 <Music className="h-16 w-16 text-amber-100" />
@@ -295,27 +337,6 @@ export default function Home() {
                 </div>
                 <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
                   View Case Study
-                </Button>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
-              <div className="h-48 bg-amber-800 flex items-center justify-center">
-                <Code className="h-16 w-16 text-amber-100" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-amber-800 mb-2">Cross-Chain Bridge Solution</h3>
-                <p className="text-amber-700 mb-4">
-                  A secure cross-chain bridge enabling asset transfers between multiple blockchain networks with minimal
-                  gas fees.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Solidity</span>
-                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Go</span>
-                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Cross-Chain</span>
-                </div>
-                <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
-                  View Project
                 </Button>
               </div>
             </div>
