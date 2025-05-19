@@ -7,7 +7,6 @@ import {
   Shield,
   FileCode,
   Search,
-  Send,
   Github,
   Linkedin,
   Twitter,
@@ -15,6 +14,8 @@ import {
   CreditCard,
   Heart,
   Smartphone,
+  BarChart,
+  Mail,
 } from "lucide-react"
 import Navbar from "@/components/navbar"
 
@@ -241,6 +242,36 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Aizen Project */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-amber-800 flex items-center justify-center">
+                <BarChart className="h-16 w-16 text-amber-100" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-amber-800 mb-2">Aizen</h3>
+                <p className="text-amber-700 mb-4">
+                  Python script designed to scrape memecoin data from Dexscreener and Solscan, providing real-time
+                  details such as price and Fully Diluted Valuation (FDV). Streamline your crypto research with fast,
+                  automated insights into trending tokens.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Python</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Web Scraping</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Crypto</span>
+                </div>
+                <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
+                  <Link
+                    href="https://github.com/0xQuilox/Thirty-dias/blob/main/Aizen.py"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex justify-center"
+                  >
+                    View on GitHub
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
             {/* Nova3 Project */}
             <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
               <div className="h-48 bg-amber-800 flex items-center justify-center">
@@ -381,27 +412,6 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-
-            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
-              <div className="h-48 bg-amber-800 flex items-center justify-center">
-                <Shield className="h-16 w-16 text-amber-100" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-amber-800 mb-2">NFT Marketplace Security Audit</h3>
-                <p className="text-amber-700 mb-4">
-                  Comprehensive security audit of a high-profile NFT marketplace, identifying and addressing critical
-                  vulnerabilities.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Security</span>
-                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Audit</span>
-                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">NFT</span>
-                </div>
-                <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
-                  View Case Study
-                </Button>
-              </div>
-            </div>
           </div>
 
           <div className="text-center mt-12">
@@ -412,72 +422,61 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Contact Section - Updated to show only social links and email */}
       <section id="contact" className="py-20 bg-amber-800 text-amber-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-3xl font-bold">Get In Touch</h2>
             <div className="h-1 w-20 bg-amber-400 mx-auto mt-4 mb-8"></div>
             <p className="max-w-3xl mx-auto text-amber-200">
-              Interested in working together? Feel free to reach out for collaborations, consultations, or just to say
-              hello!
+              Interested in working together? Feel free to reach out through any of these channels.
             </p>
           </div>
 
           <div className="max-w-3xl mx-auto">
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="name" className="block text-amber-200 mb-2">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full px-4 py-3 bg-amber-700 border border-amber-600 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-400 text-amber-50"
-                    placeholder="Your Name"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-amber-200 mb-2">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full px-4 py-3 bg-amber-700 border border-amber-600 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-400 text-amber-50"
-                    placeholder="Your Email"
-                  />
-                </div>
-              </div>
-              <div>
-                <label htmlFor="subject" className="block text-amber-200 mb-2">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  className="w-full px-4 py-3 bg-amber-700 border border-amber-600 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-400 text-amber-50"
-                  placeholder="Subject"
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-amber-200 mb-2">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  rows={6}
-                  className="w-full px-4 py-3 bg-amber-700 border border-amber-600 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-400 text-amber-50"
-                  placeholder="Your Message"
-                ></textarea>
-              </div>
-              <div className="text-center">
-                <Button className="bg-amber-600 hover:bg-amber-500 text-white px-8 py-3">
-                  <Send className="mr-2 h-4 w-4" /> Send Message
-                </Button>
-              </div>
-            </form>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <a
+                href="https://github.com/0xQuilox"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-amber-700 hover:bg-amber-600 transition-colors p-6 rounded-lg text-center flex flex-col items-center"
+              >
+                <Github className="h-12 w-12 mb-4" />
+                <h3 className="text-xl font-semibold mb-2">GitHub</h3>
+                <p className="text-amber-200">0xQuilox</p>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/miftahudeen-tajudeen-a18179366"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-amber-700 hover:bg-amber-600 transition-colors p-6 rounded-lg text-center flex flex-col items-center"
+              >
+                <Linkedin className="h-12 w-12 mb-4" />
+                <h3 className="text-xl font-semibold mb-2">LinkedIn</h3>
+                <p className="text-amber-200">Miftahudeen Tajudeen</p>
+              </a>
+
+              <a
+                href="https://x.com/TrQuilox87"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-amber-700 hover:bg-amber-600 transition-colors p-6 rounded-lg text-center flex flex-col items-center"
+              >
+                <Twitter className="h-12 w-12 mb-4" />
+                <h3 className="text-xl font-semibold mb-2">Twitter</h3>
+                <p className="text-amber-200">@TrQuilox87</p>
+              </a>
+
+              <a
+                href="mailto:miftahudeentajudeen@gmail.com"
+                className="bg-amber-700 hover:bg-amber-600 transition-colors p-6 rounded-lg text-center flex flex-col items-center"
+              >
+                <Mail className="h-12 w-12 mb-4" />
+                <h3 className="text-xl font-semibold mb-2">Email</h3>
+                <p className="text-amber-200 break-all">miftahudeentajudeen@gmail.com</p>
+              </a>
+            </div>
           </div>
         </div>
       </section>
