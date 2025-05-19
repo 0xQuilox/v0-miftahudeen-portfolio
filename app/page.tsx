@@ -13,6 +13,8 @@ import {
   Twitter,
   Music,
   CreditCard,
+  Heart,
+  Smartphone,
 } from "lucide-react"
 import Navbar from "@/components/navbar"
 
@@ -269,6 +271,36 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Medira Project */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-amber-800 flex items-center justify-center">
+                <Smartphone className="h-16 w-16 text-amber-100" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-amber-800 mb-2">Medira</h3>
+                <p className="text-amber-700 mb-4">
+                  Easily repair your electronic devices with cost-effective, efficient solutions. Our website offers
+                  real-time tracking of your repair progress and seamless logistic services, ensuring quick, reliable
+                  fixes for your gadgets with maximum convenience.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Next.js</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">React</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Tracking System</span>
+                </div>
+                <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
+                  <Link
+                    href="https://v0-medira-alpha.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex justify-center"
+                  >
+                    View Project
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
             {/* Playsion Project */}
             <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
               <div className="h-48 bg-amber-800 flex items-center justify-center">
@@ -289,6 +321,36 @@ export default function Home() {
                 <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
                   <Link
                     href="https://v0-playsion.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex justify-center"
+                  >
+                    View Project
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* FLAMES Project */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-amber-800 flex items-center justify-center">
+                <Heart className="h-16 w-16 text-amber-100" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-amber-800 mb-2">FLAMES</h3>
+                <p className="text-amber-700 mb-4">
+                  Discover the relationship type between you and your crush with our fun, algorithm-based website! Based
+                  on the classic FLAMES game, input your names to reveal if you're destined for Friendship, Love,
+                  Affection, Marriage, Enmity, or Siblings. Quick, playful, and shareable!
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">JavaScript</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Next.js</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Algorithm</span>
+                </div>
+                <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
+                  <Link
+                    href="https://v0-flames-d.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full flex justify-center"
