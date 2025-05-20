@@ -23,6 +23,7 @@ import {
   Globe,
   Award,
   ExternalLink,
+  FileText,
 } from "lucide-react"
 import Navbar from "@/components/navbar"
 
@@ -51,6 +52,16 @@ export default function Home() {
                 </Button>
                 <Button variant="outline" className="border-amber-400 text-amber-100 hover:bg-amber-800">
                   Contact Me
+                </Button>
+                <Button variant="outline" className="border-amber-400 text-amber-100 hover:bg-amber-800" asChild>
+                  <Link
+                    href="https://drive.google.com/file/d/19qlK1pFIBOGsCJ7Z4C89P1OXPUdH790X/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FileText className="mr-2 h-4 w-4" />
+                    Download CV
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -130,6 +141,16 @@ export default function Home() {
                   </Link>
                 </Button>
               </div>
+              <Button variant="solid" className="mt-6 bg-amber-700 hover:bg-amber-800 text-white" asChild>
+                <Link
+                  href="https://drive.google.com/file/d/19qlK1pFIBOGsCJ7Z4C89P1OXPUdH790X/view?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FileText className="mr-2 h-4 w-4" />
+                  Download CV
+                </Link>
+              </Button>
             </div>
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-white p-6 rounded-lg shadow-md border border-amber-200">

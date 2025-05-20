@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { Menu, X, FileText } from "lucide-react"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -34,12 +34,24 @@ export default function Navbar() {
             <Link href="#projects" className="hover:text-amber-300 transition-colors">
               Projects
             </Link>
+            <Link href="#contributions" className="hover:text-amber-300 transition-colors">
+              Contributions
+            </Link>
             <Link href="#contact" className="hover:text-amber-300 transition-colors">
               Contact
             </Link>
           </nav>
 
-          <Button className="hidden md:flex bg-amber-600 hover:bg-amber-700 text-white">Hire Me</Button>
+          <Button className="hidden md:flex bg-amber-600 hover:bg-amber-700 text-white" asChild>
+            <Link
+              href="https://drive.google.com/file/d/19qlK1pFIBOGsCJ7Z4C89P1OXPUdH790X/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FileText className="mr-2 h-4 w-4" />
+              Download CV
+            </Link>
+          </Button>
 
           {/* Mobile Menu Button */}
           <button className="md:hidden text-amber-50 focus:outline-none" onClick={toggleMenu} aria-label="Toggle menu">
@@ -64,10 +76,22 @@ export default function Navbar() {
             <Link href="#projects" className="block py-2 hover:bg-amber-700 px-4 rounded" onClick={toggleMenu}>
               Projects
             </Link>
+            <Link href="#contributions" className="block py-2 hover:bg-amber-700 px-4 rounded" onClick={toggleMenu}>
+              Contributions
+            </Link>
             <Link href="#contact" className="block py-2 hover:bg-amber-700 px-4 rounded" onClick={toggleMenu}>
               Contact
             </Link>
-            <Button className="bg-amber-600 hover:bg-amber-700 text-white w-full">Hire Me</Button>
+            <Button className="bg-amber-600 hover:bg-amber-700 text-white w-full" asChild>
+              <Link
+                href="https://drive.google.com/file/d/19qlK1pFIBOGsCJ7Z4C89P1OXPUdH790X/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FileText className="mr-2 h-4 w-4" />
+                Download CV
+              </Link>
+            </Button>
           </div>
         </nav>
       )}
