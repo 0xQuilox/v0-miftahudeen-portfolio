@@ -17,6 +17,8 @@ import {
   BarChart,
   Mail,
   DollarSign,
+  CheckCircle,
+  Clock,
 } from "lucide-react"
 import Navbar from "@/components/navbar"
 
@@ -244,7 +246,12 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Aizen Project */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
+            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow relative">
+              {/* Status Indicator */}
+              <div className="absolute top-3 right-3 bg-green-500 text-white text-xs font-medium px-2.5 py-1 rounded-full flex items-center">
+                <CheckCircle className="h-3.5 w-3.5 mr-1" />
+                Completed
+              </div>
               <div className="h-48 bg-amber-800 flex items-center justify-center">
                 <BarChart className="h-16 w-16 text-amber-100" />
               </div>
@@ -274,7 +281,12 @@ export default function Home() {
             </div>
 
             {/* Web2 Streaming Payments Project */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
+            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow relative">
+              {/* Status Indicator */}
+              <div className="absolute top-3 right-3 bg-green-500 text-white text-xs font-medium px-2.5 py-1 rounded-full flex items-center">
+                <CheckCircle className="h-3.5 w-3.5 mr-1" />
+                Completed
+              </div>
               <div className="h-48 bg-amber-800 flex items-center justify-center">
                 <DollarSign className="h-16 w-16 text-amber-100" />
               </div>
@@ -304,7 +316,12 @@ export default function Home() {
             </div>
 
             {/* Nova3 Project */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
+            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow relative">
+              {/* Status Indicator */}
+              <div className="absolute top-3 right-3 bg-amber-500 text-white text-xs font-medium px-2.5 py-1 rounded-full flex items-center">
+                <Clock className="h-3.5 w-3.5 mr-1" />
+                In development
+              </div>
               <div className="h-48 bg-amber-800 flex items-center justify-center">
                 <CreditCard className="h-16 w-16 text-amber-100" />
               </div>
@@ -334,7 +351,12 @@ export default function Home() {
             </div>
 
             {/* Medira Project */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
+            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow relative">
+              {/* Status Indicator */}
+              <div className="absolute top-3 right-3 bg-amber-500 text-white text-xs font-medium px-2.5 py-1 rounded-full flex items-center">
+                <Clock className="h-3.5 w-3.5 mr-1" />
+                In development
+              </div>
               <div className="h-48 bg-amber-800 flex items-center justify-center">
                 <Smartphone className="h-16 w-16 text-amber-100" />
               </div>
@@ -363,38 +385,13 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Playsion Project */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
-              <div className="h-48 bg-amber-800 flex items-center justify-center">
-                <Music className="h-16 w-16 text-amber-100" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-amber-800 mb-2">Playsion</h3>
-                <p className="text-amber-700 mb-4">
-                  Seamlessly combine your favorite playlists from Spotify, Apple Music, and YouTube Music into one
-                  unified listening experience. Merge tracks effortlessly, discover new vibes, and enjoy your music
-                  across platforms without the hassle.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Next.js</span>
-                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">React</span>
-                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">API Integration</span>
-                </div>
-                <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
-                  <Link
-                    href="https://v0-playsion.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full flex justify-center"
-                  >
-                    View Project
-                  </Link>
-                </Button>
-              </div>
-            </div>
-
             {/* FLAMES Project */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
+            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow relative">
+              {/* Status Indicator */}
+              <div className="absolute top-3 right-3 bg-green-500 text-white text-xs font-medium px-2.5 py-1 rounded-full flex items-center">
+                <CheckCircle className="h-3.5 w-3.5 mr-1" />
+                Completed
+              </div>
               <div className="h-48 bg-amber-800 flex items-center justify-center">
                 <Heart className="h-16 w-16 text-amber-100" />
               </div>
@@ -413,6 +410,41 @@ export default function Home() {
                 <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
                   <Link
                     href="https://v0-flames-d.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex justify-center"
+                  >
+                    View Project
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Playsion Project */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow relative">
+              {/* Status Indicator */}
+              <div className="absolute top-3 right-3 bg-green-500 text-white text-xs font-medium px-2.5 py-1 rounded-full flex items-center">
+                <CheckCircle className="h-3.5 w-3.5 mr-1" />
+                Completed
+              </div>
+              <div className="h-48 bg-amber-800 flex items-center justify-center">
+                <Music className="h-16 w-16 text-amber-100" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-amber-800 mb-2">Playsion</h3>
+                <p className="text-amber-700 mb-4">
+                  Seamlessly combine your favorite playlists from Spotify, Apple Music, and YouTube Music into one
+                  unified listening experience. Merge tracks effortlessly, discover new vibes, and enjoy your music
+                  across platforms without the hassle.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Next.js</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">React</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">API Integration</span>
+                </div>
+                <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
+                  <Link
+                    href="https://v0-playsion.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full flex justify-center"
