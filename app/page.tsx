@@ -19,6 +19,10 @@ import {
   DollarSign,
   CheckCircle,
   Clock,
+  Bug,
+  Globe,
+  Award,
+  ExternalLink,
 } from "lucide-react"
 import Navbar from "@/components/navbar"
 
@@ -460,6 +464,166 @@ export default function Home() {
             <Button className="bg-amber-700 hover:bg-amber-800 text-white">
               View All Projects <ChevronRight className="ml-2 h-4 w-4" />
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Open Source Contributions Section */}
+      <section id="contributions" className="py-20 bg-amber-100">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-amber-900">Open Source Contributions</h2>
+            <div className="h-1 w-20 bg-amber-600 mx-auto mt-4 mb-8"></div>
+            <p className="max-w-3xl mx-auto text-amber-800">
+              My contributions to security research, vulnerability disclosure programs, and smart contract audits.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Chromium VDP */}
+            <div className="bg-white p-6 rounded-lg shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-amber-700 rounded-lg flex items-center justify-center mr-4">
+                  <Globe className="h-6 w-6 text-amber-50" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-amber-800">Chromium VDP</h3>
+                  <p className="text-amber-600 text-sm">Vulnerability Disclosure Program</p>
+                </div>
+              </div>
+              <p className="text-amber-700 mb-4">
+                Contributed to the Chromium Vulnerability Disclosure Program by identifying and reporting security
+                vulnerabilities in the Chrome browser, helping to improve the security of millions of users worldwide.
+              </p>
+              <div className="flex justify-between items-center">
+                <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Web Security</span>
+                <Link
+                  href="https://issues.chromium.org/issues/40885369#comment17"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-amber-700 hover:text-amber-900 flex items-center text-sm font-medium"
+                >
+                  View Contribution <ExternalLink className="ml-1 h-3.5 w-3.5" />
+                </Link>
+              </div>
+            </div>
+
+            {/* The Standard Contest */}
+            <div className="bg-white p-6 rounded-lg shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-amber-700 rounded-lg flex items-center justify-center mr-4">
+                  <Award className="h-6 w-6 text-amber-50" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-amber-800">The Standard Contest</h3>
+                  <p className="text-amber-600 text-sm">CodeHawks Smart Contract Audit</p>
+                </div>
+              </div>
+              <p className="text-amber-700 mb-4">
+                Participated in the CodeHawks audit contest for The Standard protocol, identifying vulnerabilities and
+                suggesting improvements to enhance the security and efficiency of the smart contracts.
+              </p>
+              <div className="flex justify-between items-center">
+                <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">
+                  Smart Contract Auditing
+                </span>
+                <Link
+                  href="https://codehawks.cyfrin.io/c/2023-12-the-standard/s/113"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-amber-700 hover:text-amber-900 flex items-center text-sm font-medium"
+                >
+                  View Submission <ExternalLink className="ml-1 h-3.5 w-3.5" />
+                </Link>
+              </div>
+            </div>
+
+            {/* QuantAMM Contest */}
+            <div className="bg-white p-6 rounded-lg shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-amber-700 rounded-lg flex items-center justify-center mr-4">
+                  <Award className="h-6 w-6 text-amber-50" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-amber-800">QuantAMM Contest</h3>
+                  <p className="text-amber-600 text-sm">CodeHawks Smart Contract Audit</p>
+                </div>
+              </div>
+              <p className="text-amber-700 mb-4">
+                Contributed to the security audit of the QuantAMM protocol through the CodeHawks platform, helping to
+                secure this automated market maker by identifying potential vulnerabilities and optimization
+                opportunities.
+              </p>
+              <div className="flex justify-between items-center">
+                <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">DeFi Security</span>
+                <Link
+                  href="https://codehawks.cyfrin.io/c/2024-12-quantamm/s/159"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-amber-700 hover:text-amber-900 flex items-center text-sm font-medium"
+                >
+                  View Submission <ExternalLink className="ml-1 h-3.5 w-3.5" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Bugcrowd BBP 1 */}
+            <div className="bg-white p-6 rounded-lg shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-amber-700 rounded-lg flex items-center justify-center mr-4">
+                  <Bug className="h-6 w-6 text-amber-50" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-amber-800">Bugcrowd BBP</h3>
+                  <p className="text-amber-600 text-sm">Bug Bounty Program Submission</p>
+                </div>
+              </div>
+              <p className="text-amber-700 mb-4">
+                Successfully identified and reported security vulnerabilities through the Bugcrowd Bug Bounty Program,
+                helping organizations strengthen their security posture and protect user data.
+              </p>
+              <div className="flex justify-between items-center">
+                <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">
+                  Web Application Security
+                </span>
+                <Link
+                  href="https://bugcrowd.com/submissions/f394bed8-bcfe-44f7-84ee-48d0087fed5c"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-amber-700 hover:text-amber-900 flex items-center text-sm font-medium"
+                >
+                  View Submission <ExternalLink className="ml-1 h-3.5 w-3.5" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Bugcrowd BBP 2 */}
+            <div className="bg-white p-6 rounded-lg shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-amber-700 rounded-lg flex items-center justify-center mr-4">
+                  <Bug className="h-6 w-6 text-amber-50" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-amber-800">Bugcrowd BBP</h3>
+                  <p className="text-amber-600 text-sm">Bug Bounty Program Submission</p>
+                </div>
+              </div>
+              <p className="text-amber-700 mb-4">
+                Discovered and reported critical security vulnerabilities through Bugcrowd's platform, demonstrating
+                expertise in penetration testing and security research while helping to secure digital assets.
+              </p>
+              <div className="flex justify-between items-center">
+                <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">API Security</span>
+                <Link
+                  href="https://bugcrowd.com/submissions/40e58df0-8ae5-4c50-ae2b-b4ede7aa7b93"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-amber-700 hover:text-amber-900 flex items-center text-sm font-medium"
+                >
+                  View Submission <ExternalLink className="ml-1 h-3.5 w-3.5" />
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
