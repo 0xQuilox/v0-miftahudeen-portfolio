@@ -16,6 +16,7 @@ import {
   Smartphone,
   BarChart,
   Mail,
+  DollarSign,
 } from "lucide-react"
 import Navbar from "@/components/navbar"
 
@@ -272,6 +273,36 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Web2 Streaming Payments Project */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
+              <div className="h-48 bg-amber-800 flex items-center justify-center">
+                <DollarSign className="h-16 w-16 text-amber-100" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-amber-800 mb-2">Web2 Streaming Payments</h3>
+                <p className="text-amber-700 mb-4">
+                  Smart contract for Web2 streaming payments using USDC enables secure, automated transactions. It
+                  processes USDC payments, verifies transactions, and grants content access. Features include
+                  subscription renewals, refunds and Web2 integration via oracles/APIs for a seamless user experience.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Solidity</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">USDC</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Smart Contracts</span>
+                </div>
+                <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
+                  <Link
+                    href="https://github.com/0xQuilox/n3-submanager"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex justify-center"
+                  >
+                    View on GitHub
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
             {/* Nova3 Project */}
             <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
               <div className="h-48 bg-amber-800 flex items-center justify-center">
@@ -388,27 +419,6 @@ export default function Home() {
                   >
                     View Project
                   </Link>
-                </Button>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
-              <div className="h-48 bg-amber-800 flex items-center justify-center">
-                <FileCode className="h-16 w-16 text-amber-100" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-amber-800 mb-2">DeFi Lending Protocol</h3>
-                <p className="text-amber-700 mb-4">
-                  A secure and efficient decentralized lending platform with automated interest rate adjustments and
-                  collateral management.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Solidity</span>
-                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">React</span>
-                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Hardhat</span>
-                </div>
-                <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
-                  View Project
                 </Button>
               </div>
             </div>
