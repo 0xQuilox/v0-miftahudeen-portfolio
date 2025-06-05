@@ -24,6 +24,7 @@ import {
   Award,
   ExternalLink,
   FileText,
+  ShoppingBag,
 } from "lucide-react"
 import Navbar from "@/components/navbar"
 
@@ -40,7 +41,7 @@ export default function Home() {
               <h1 className="text-4xl md:text-5xl font-bold mb-4">Miftahudeen Tajudeen</h1>
               <div className="h-1 w-20 bg-amber-400 mb-6"></div>
               <h2 className="text-xl md:text-2xl mb-6 text-amber-200">
-                Fullstack Blockchain Developer & Security Researcher
+                Fullstack web application, blockchain developer and security researcher
               </h2>
               <p className="text-lg mb-8 text-amber-100/90 max-w-lg">
                 Specializing in EVM ecosystems and Solidity development, I design secure dApps while conducting smart
@@ -159,15 +160,16 @@ export default function Home() {
                   <li>Solidity</li>
                   <li>JavaScript/TypeScript</li>
                   <li>Python</li>
-                  <li>Rust</li>
-                  <li>Go</li>
+                  <li>Vyper</li>
                 </ul>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md border border-amber-200">
-                <h4 className="font-semibold text-amber-800 mb-2">Frameworks</h4>
+                <h4 className="font-semibold text-amber-800 mb-2">Frameworks/Stacks</h4>
                 <ul className="text-amber-700 space-y-2">
-                  <li>Hardhat/Truffle</li>
+                  <li>MongoDB</li>
+                  <li>SQL</li>
                   <li>React/Next.js</li>
+                  <li>Next.js Tailwind CSS</li>
                   <li>Node.js/Express</li>
                   <li>ethers.js/web3.js</li>
                   <li>Foundry</li>
@@ -270,6 +272,41 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Stockfort Project */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow relative">
+              {/* Status Indicator */}
+              <div className="absolute top-3 right-3 bg-green-500 text-white text-xs font-medium px-2.5 py-1 rounded-full flex items-center">
+                <CheckCircle className="h-3.5 w-3.5 mr-1" />
+                Completed
+              </div>
+              <div className="h-48 bg-amber-800 flex items-center justify-center">
+                <ShoppingBag className="h-16 w-16 text-amber-100" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-amber-800 mb-2">Stockfort</h3>
+                <p className="text-amber-700 mb-4">
+                  A farm-to-door delivery app connecting you directly to fresh livestock and premium processed dairy
+                  products. Sourced from trusted local farms, our app ensures quality, convenience, and doorstep
+                  delivery, bringing the freshest meats and dairy straight to you.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Next.js</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">E-commerce</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Food Delivery</span>
+                </div>
+                <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
+                  <Link
+                    href="https://v0-webpage-clone-seven.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex justify-center"
+                  >
+                    View Project
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
             {/* Aizen Project */}
             <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow relative">
               {/* Status Indicator */}
@@ -714,7 +751,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
               <h2 className="text-2xl font-bold text-amber-100">Miftahudeen Tajudeen</h2>
-              <p className="mt-2">Blockchain Developer & Security Researcher</p>
+              <p className="mt-2">Fullstack web application, blockchain developer and security researcher</p>
             </div>
             <div className="flex space-x-6">
               <Link
