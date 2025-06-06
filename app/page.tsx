@@ -307,6 +307,43 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Omicron Project */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow relative">
+              {/* Status Indicator */}
+              <div className="absolute top-3 right-3 bg-green-500 text-white text-xs font-medium px-2.5 py-1 rounded-full flex items-center">
+                <CheckCircle className="h-3.5 w-3.5 mr-1" />
+                Completed
+              </div>
+              <div className="h-48 bg-amber-800 flex items-center justify-center">
+                <Smartphone className="h-16 w-16 text-amber-100" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-amber-800 mb-2">Omicron</h3>
+                <p className="text-amber-700 mb-4">
+                  A user-friendly app designed for tech enthusiasts and shoppers, enabling seamless discovery of
+                  detailed phone specifications. Users can search for comprehensive phone details, compare up to three
+                  devices side-by-side, and filter phones based on similar hardware and software features, ensuring
+                  informed decisions tailored to their needs.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Next.js</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">React</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Tech Specs</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Comparison Tool</span>
+                </div>
+                <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
+                  <Link
+                    href="https://omicron-three.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex justify-center"
+                  >
+                    View Project
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
             {/* Aizen Project */}
             <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow relative">
               {/* Status Indicator */}
