@@ -14,14 +14,14 @@ export default function Navbar() {
 
   return (
     <header className="fixed w-full bg-amber-900/95 text-amber-50 z-50 shadow-md">
-      <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
-          <Link href="/" className="text-xl font-bold">
+      <div className="container mx-auto px-3 sm:px-4">
+        <div className="flex justify-between items-center h-14 sm:h-16">
+          <Link href="/" className="text-lg sm:text-xl font-bold">
             MT | Web & Blockchain Security
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-6 lg:space-x-8">
             <Link href="/" className="hover:text-amber-300 transition-colors">
               Home
             </Link>
@@ -62,24 +62,48 @@ export default function Navbar() {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <nav className="md:hidden bg-amber-800 py-4">
-          <div className="container mx-auto px-4 flex flex-col space-y-4">
-            <Link href="/" className="block py-2 hover:bg-amber-700 px-4 rounded" onClick={toggleMenu}>
+        <nav className="md:hidden bg-amber-800 py-3 sm:py-4">
+          <div className="container mx-auto px-3 sm:px-4 flex flex-col space-y-2 sm:space-y-4">
+            <Link
+              href="/"
+              className="block py-2.5 sm:py-2 hover:bg-amber-700 px-3 sm:px-4 rounded text-sm sm:text-base"
+              onClick={toggleMenu}
+            >
               Home
             </Link>
-            <Link href="#about" className="block py-2 hover:bg-amber-700 px-4 rounded" onClick={toggleMenu}>
+            <Link
+              href="#about"
+              className="block py-2.5 sm:py-2 hover:bg-amber-700 px-3 sm:px-4 rounded text-sm sm:text-base"
+              onClick={toggleMenu}
+            >
               About
             </Link>
-            <Link href="#services" className="block py-2 hover:bg-amber-700 px-4 rounded" onClick={toggleMenu}>
+            <Link
+              href="#services"
+              className="block py-2.5 sm:py-2 hover:bg-amber-700 px-3 sm:px-4 rounded text-sm sm:text-base"
+              onClick={toggleMenu}
+            >
               Services
             </Link>
-            <Link href="#projects" className="block py-2 hover:bg-amber-700 px-4 rounded" onClick={toggleMenu}>
+            <Link
+              href="#projects"
+              className="block py-2.5 sm:py-2 hover:bg-amber-700 px-3 sm:px-4 rounded text-sm sm:text-base"
+              onClick={toggleMenu}
+            >
               Projects
             </Link>
-            <Link href="#contributions" className="block py-2 hover:bg-amber-700 px-4 rounded" onClick={toggleMenu}>
+            <Link
+              href="#contributions"
+              className="block py-2.5 sm:py-2 hover:bg-amber-700 px-3 sm:px-4 rounded text-sm sm:text-base"
+              onClick={toggleMenu}
+            >
               Contributions
             </Link>
-            <Link href="#contact" className="block py-2 hover:bg-amber-700 px-4 rounded" onClick={toggleMenu}>
+            <Link
+              href="#contact"
+              className="block py-2.5 sm:py-2 hover:bg-amber-700 px-3 sm:px-4 rounded text-sm sm:text-base"
+              onClick={toggleMenu}
+            >
               Contact
             </Link>
             <Button className="bg-amber-600 hover:bg-amber-700 text-white w-full" asChild>

@@ -35,26 +35,24 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-b from-amber-800/90 to-amber-900/90 text-amber-50 pt-16">
-        <div className="container mx-auto px-4 py-20 md:py-32">
+        <div className="container mx-auto px-4 py-16 md:py-20 lg:py-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">Miftahudeen Tajudeen</h1>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Miftahudeen Tajudeen</h1>
               <div className="h-1 w-20 bg-amber-400 mb-6"></div>
-              <h2 className="text-xl md:text-2xl mb-6 text-amber-200">
+              <h2 className="text-lg sm:text-xl md:text-2xl mb-6 text-amber-200">
                 Fullstack web application, blockchain developer and security researcher
               </h2>
-              <p className="text-lg mb-8 text-amber-100/90 max-w-lg">
+              <p className="text-base sm:text-lg mb-8 text-amber-100/90 max-w-lg">
                 Specializing in EVM ecosystems and Solidity development, I design secure dApps while conducting smart
                 contract audits and API penetration testing to ensure robust blockchain solutions.
               </p>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
                 <Button className="bg-amber-600 hover:bg-amber-700 text-white">
                   View Projects <ChevronRight className="ml-2 h-4 w-4" />
                 </Button>
-                <Button variant="outline" className="border-amber-400 text-amber-100 hover:bg-amber-800">
-                  Contact Me
-                </Button>
-                <Button variant="outline" className="border-amber-400 text-amber-100 hover:bg-amber-800" asChild>
+                <Button className="bg-amber-600 hover:bg-amber-700 text-white">Contact Me</Button>
+                <Button className="bg-amber-600 hover:bg-amber-700 text-white" asChild>
                   <Link
                     href="https://drive.google.com/file/d/19qlK1pFIBOGsCJ7Z4C89P1OXPUdH790X/view?usp=drive_link"
                     target="_blank"
@@ -67,7 +65,7 @@ export default function Home() {
               </div>
             </div>
             <div className="order-1 md:order-2 flex justify-center md:justify-end">
-              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-amber-400 shadow-xl">
+              <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-amber-400 shadow-xl mx-auto">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Snapchat-1336841524.jpg-RjD6c503Ur1155EtjMe9H8sVwGWOwS.jpeg"
                   alt="Miftahudeen Tajudeen"
@@ -83,18 +81,18 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-amber-50">
+      <section id="about" className="py-12 sm:py-16 md:py-20 bg-amber-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-amber-900">About Me</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-amber-900">About Me</h2>
             <div className="h-1 w-20 bg-amber-600 mx-auto mt-4 mb-8"></div>
-            <p className="max-w-3xl mx-auto text-amber-800">
+            <p className="max-w-3xl mx-auto text-sm sm:text-base text-amber-800">
               I'm a passionate blockchain developer and security researcher with expertise in building secure
               decentralized applications and auditing smart contracts for vulnerabilities.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
               <h3 className="text-2xl font-semibold text-amber-800 mb-4">My Journey</h3>
               <p className="text-amber-700 mb-6">
@@ -153,7 +151,7 @@ export default function Home() {
                 </Link>
               </Button>
             </div>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
               <div className="bg-white p-6 rounded-lg shadow-md border border-amber-200">
                 <h4 className="font-semibold text-amber-800 mb-2">Languages</h4>
                 <ul className="text-amber-700 space-y-2">
@@ -201,18 +199,18 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-amber-100">
+      <section id="services" className="py-12 sm:py-16 md:py-20 bg-amber-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-amber-900">My Services</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-amber-900">My Services</h2>
             <div className="h-1 w-20 bg-amber-600 mx-auto mt-4 mb-8"></div>
-            <p className="max-w-3xl mx-auto text-amber-800">
+            <p className="max-w-3xl mx-auto text-sm sm:text-base text-amber-800">
               I offer a range of specialized services in blockchain development and security, helping clients build
               secure and efficient decentralized solutions.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             <div className="bg-white p-8 rounded-lg shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
               <div className="w-14 h-14 bg-amber-700 rounded-lg flex items-center justify-center mb-6">
                 <Code className="h-7 w-7 text-amber-50" />
@@ -261,17 +259,17 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 bg-amber-50">
+      <section id="projects" className="py-12 sm:py-16 md:py-20 bg-amber-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-amber-900">Featured Projects</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-amber-900">Featured Projects</h2>
             <div className="h-1 w-20 bg-amber-600 mx-auto mt-4 mb-8"></div>
-            <p className="max-w-3xl mx-auto text-amber-800">
+            <p className="max-w-3xl mx-auto text-sm sm:text-base text-amber-800">
               A selection of my recent work in blockchain development and security research.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8">
             {/* Stockfort Project */}
             <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow relative">
               {/* Status Indicator */}
@@ -284,7 +282,7 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-amber-800 mb-2">Stockfort</h3>
-                <p className="text-amber-700 mb-4">
+                <p className="text-sm sm:text-base text-amber-700 mb-4">
                   A farm-to-door delivery app connecting you directly to fresh livestock and premium processed dairy
                   products. Sourced from trusted local farms, our app ensures quality, convenience, and doorstep
                   delivery, bringing the freshest meats and dairy straight to you.
@@ -319,7 +317,7 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-amber-800 mb-2">Omicron</h3>
-                <p className="text-amber-700 mb-4">
+                <p className="text-sm sm:text-base text-amber-700 mb-4">
                   A user-friendly app designed for tech enthusiasts and shoppers, enabling seamless discovery of
                   detailed phone specifications. Users can search for comprehensive phone details, compare up to three
                   devices side-by-side, and filter phones based on similar hardware and software features, ensuring
@@ -356,7 +354,7 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-amber-800 mb-2">Aizen</h3>
-                <p className="text-amber-700 mb-4">
+                <p className="text-sm sm:text-base text-amber-700 mb-4">
                   Python script designed to scrape memecoin data from Dexscreener and Solscan, providing real-time
                   details such as price and Fully Diluted Valuation (FDV). Streamline your crypto research with fast,
                   automated insights into trending tokens.
@@ -391,7 +389,7 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-amber-800 mb-2">Web2 Streaming Payments</h3>
-                <p className="text-amber-700 mb-4">
+                <p className="text-sm sm:text-base text-amber-700 mb-4">
                   Smart contract for Web2 streaming payments using USDC enables secure, automated transactions. It
                   processes USDC payments, verifies transactions, and grants content access. Features include
                   subscription renewals, refunds and Web2 integration via oracles/APIs for a seamless user experience.
@@ -426,7 +424,7 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-amber-800 mb-2">Nova3</h3>
-                <p className="text-amber-700 mb-4">
+                <p className="text-sm sm:text-base text-amber-700 mb-4">
                   A blockchain platform empowering users to pay for streaming services like Netflix, Prime, X, Spotify,
                   and more, plus e-commerce purchases on Amazon, Walmart, and AliExpress, using USDC stablecoin. Fast,
                   secure, and seamless transactions, all in one place.
@@ -461,7 +459,7 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-amber-800 mb-2">Medira</h3>
-                <p className="text-amber-700 mb-4">
+                <p className="text-sm sm:text-base text-amber-700 mb-4">
                   Easily repair your electronic devices with cost-effective, efficient solutions. Our website offers
                   real-time tracking of your repair progress and seamless logistic services, ensuring quick, reliable
                   fixes for your gadgets with maximum convenience.
@@ -496,7 +494,7 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-amber-800 mb-2">FLAMES</h3>
-                <p className="text-amber-700 mb-4">
+                <p className="text-sm sm:text-base text-amber-700 mb-4">
                   Discover the relationship type between you and your crush with our fun, algorithm-based website! Based
                   on the classic FLAMES game, input your names to reveal if you're destined for Friendship, Love,
                   Affection, Marriage, Enmity, or Siblings. Quick, playful, and shareable!
@@ -531,7 +529,7 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-amber-800 mb-2">Playsion</h3>
-                <p className="text-amber-700 mb-4">
+                <p className="text-sm sm:text-base text-amber-700 mb-4">
                   Seamlessly combine your favorite playlists from Spotify, Apple Music, and YouTube Music into one
                   unified listening experience. Merge tracks effortlessly, discover new vibes, and enjoy your music
                   across platforms without the hassle.
@@ -564,17 +562,17 @@ export default function Home() {
       </section>
 
       {/* Open Source Contributions Section */}
-      <section id="contributions" className="py-20 bg-amber-100">
+      <section id="contributions" className="py-12 sm:py-16 md:py-20 bg-amber-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-amber-900">Open Source Contributions</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-amber-900">Open Source Contributions</h2>
             <div className="h-1 w-20 bg-amber-600 mx-auto mt-4 mb-8"></div>
-            <p className="max-w-3xl mx-auto text-amber-800">
+            <p className="max-w-3xl mx-auto text-sm sm:text-base text-amber-800">
               My contributions to security research, vulnerability disclosure programs, and smart contract audits.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
             {/* Chromium VDP */}
             <div className="bg-white p-6 rounded-lg shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
               <div className="flex items-center mb-4">
@@ -724,18 +722,18 @@ export default function Home() {
       </section>
 
       {/* Contact Section - Updated to show only social links and email */}
-      <section id="contact" className="py-20 bg-amber-800 text-amber-50">
+      <section id="contact" className="py-12 sm:py-16 md:py-20 bg-amber-800 text-amber-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold">Get In Touch</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold">Get In Touch</h2>
             <div className="h-1 w-20 bg-amber-400 mx-auto mt-4 mb-8"></div>
-            <p className="max-w-3xl mx-auto text-amber-200">
+            <p className="max-w-3xl mx-auto text-sm sm:text-base text-amber-200">
               Interested in working together? Feel free to reach out through any of these channels.
             </p>
           </div>
 
           <div className="max-w-3xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               <a
                 href="https://github.com/0xQuilox"
                 target="_blank"
@@ -785,12 +783,14 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-amber-900 text-amber-200 py-12">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
             <div className="mb-6 md:mb-0">
-              <h2 className="text-2xl font-bold text-amber-100">Miftahudeen Tajudeen</h2>
-              <p className="mt-2">Fullstack web application, blockchain developer and security researcher</p>
+              <h2 className="text-xl sm:text-2xl font-bold text-amber-100">Miftahudeen Tajudeen</h2>
+              <p className="mt-2 text-sm sm:text-base text-center sm:text-left">
+                Fullstack web application, blockchain developer and security researcher
+              </p>
             </div>
-            <div className="flex space-x-6">
+            <div className="flex space-x-4 sm:space-x-6">
               <Link
                 href="https://github.com/0xQuilox"
                 className="hover:text-amber-400 transition-colors"
