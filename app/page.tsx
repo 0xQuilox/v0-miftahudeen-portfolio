@@ -35,17 +35,20 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-b from-amber-800/90 to-amber-900/90 text-amber-50 pt-16">
-        <div className="container mx-auto px-4 py-16 md:py-20 lg:py-32">
+        <div className="container mx-auto px-3 sm:px-4 py-12 sm:py-16 md:py-20 lg:py-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="order-2 md:order-1">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Miftahudeen Tajudeen</h1>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
+                Miftahudeen Tajudeen
+              </h1>
               <div className="h-1 w-20 bg-amber-400 mb-6"></div>
-              <h2 className="text-lg sm:text-xl md:text-2xl mb-6 text-amber-200">
-                Fullstack web application, blockchain developer and security researcher
+              <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 text-amber-200 leading-relaxed">
+                Fullstack web application, mobile app, AI/ML developer, blockchain developer and security researcher
               </h2>
               <p className="text-base sm:text-lg mb-8 text-amber-100/90 max-w-lg">
-                Specializing in EVM ecosystems and Solidity development, I design secure dApps while conducting smart
-                contract audits and API penetration testing to ensure robust blockchain solutions.
+                Full-stack software developer specializing in web applications, mobile apps, and AI/ML models. Expert in
+                EVM ecosystems and Solidity development, I design secure dApps while conducting smart contract audits
+                and API penetration testing to ensure robust, scalable solutions across all platforms.
               </p>
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
                 <Button className="bg-amber-600 hover:bg-amber-700 text-white">
@@ -81,14 +84,15 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-12 sm:py-16 md:py-20 bg-amber-50">
-        <div className="container mx-auto px-4">
+      <section id="about" className="py-8 sm:py-12 md:py-16 lg:py-20 bg-amber-50">
+        <div className="container mx-auto px-3 sm:px-4">
           <div className="text-center mb-16">
-            <h2 className="text-2xl sm:text-3xl font-bold text-amber-900">About Me</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-amber-900">About Me</h2>
             <div className="h-1 w-20 bg-amber-600 mx-auto mt-4 mb-8"></div>
             <p className="max-w-3xl mx-auto text-sm sm:text-base text-amber-800">
-              I'm a passionate blockchain developer and security researcher with expertise in building secure
-              decentralized applications and auditing smart contracts for vulnerabilities.
+              I'm a passionate full-stack software developer and security researcher with expertise in building web
+              applications, mobile apps, AI/ML models, and secure decentralized applications while auditing smart
+              contracts for vulnerabilities.
             </p>
           </div>
 
@@ -96,22 +100,23 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-semibold text-amber-800 mb-4">My Journey</h3>
               <p className="text-amber-700 mb-6">
-                I design and deploy comprehensive software solutions spanning web applications, mobile apps, and
-                decentralized applications (dApps). My expertise encompasses full-stack web development using React,
-                Next.js, Node.js, and modern frameworks, alongside cross-platform mobile development with React Native
-                and Expo. I specialize in AI/ML development and integration, creating intelligent systems for
-                diagnostics, automation, and predictive analytics. Additionally, I streamline business operations
-                through workflow automation using Zapier and n8n, while maintaining deep proficiency in blockchain
-                technologies, Solidity, and EVM ecosystems for secure, user-centric solutions.
+                As a full-stack software developer, I architect and deploy comprehensive solutions spanning web
+                applications, cross-platform mobile apps, and intelligent AI/ML systems. My expertise encompasses modern
+                web development using React, Next.js, Node.js, and TypeScript, alongside native-quality mobile
+                development with React Native and Expo. I specialize in AI/ML model development and integration,
+                creating intelligent systems for diagnostics, automation, predictive analytics, and business process
+                optimization. Additionally, I maintain deep proficiency in blockchain technologies, Solidity, and EVM
+                ecosystems while streamlining operations through workflow automation using Zapier and n8n.
               </p>
               <p className="text-amber-700 mb-6">
-                In my role as an EVM Smart Contract Auditor and AI/ML Developer, I specialize in identifying
-                vulnerabilities in blockchain systems while developing intelligent automation solutions. My AI/ML
-                expertise includes building models for device diagnostics, automated analysis, and business process
-                optimization. I conduct rigorous code reviews and stress-testing of smart contracts, helping
-                organizations deploy secure, gas-optimized solutions. My work bridges traditional software development
-                with cutting-edge AI technologies and blockchain security, ensuring robust, intelligent systems that
-                withstand sophisticated attacks.
+                My role as a Software Developer and AI/ML Engineer involves creating end-to-end solutions that bridge
+                traditional application development with cutting-edge artificial intelligence. I develop and deploy
+                machine learning models for device diagnostics, automated analysis, content generation, sports
+                performance analytics, and business intelligence. My software development approach integrates AI
+                capabilities seamlessly into web and mobile applications, ensuring scalable, intelligent systems.
+                Simultaneously, as an EVM Smart Contract Auditor, I conduct rigorous security assessments, helping
+                organizations deploy secure, gas-optimized blockchain solutions that complement their broader software
+                ecosystem.
               </p>
               <p className="text-amber-700 mb-6">
                 As a Penetration Tester, API Security Specialist, and Business Automation Expert, I proactively secure
@@ -165,31 +170,32 @@ export default function Home() {
                 </Link>
               </Button>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-md border border-amber-200">
-                <h4 className="font-semibold text-amber-800 mb-2">Languages</h4>
-                <ul className="text-amber-700 space-y-2">
-                  <li>Solidity</li>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 lg:gap-6">
+              <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md border border-amber-200">
+                <h4 className="font-semibold text-amber-800 mb-2 text-sm sm:text-base">Languages</h4>
+                <ul className="text-amber-700 space-y-1 sm:space-y-2 text-xs sm:text-sm">
                   <li>JavaScript/TypeScript</li>
                   <li>Python</li>
+                  <li>Solidity</li>
                   <li>Vyper</li>
-                </ul>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-md border border-amber-200">
-                <h4 className="font-semibold text-amber-800 mb-2">Frameworks/Stacks</h4>
-                <ul className="text-amber-700 space-y-2">
-                  <li>MongoDB</li>
                   <li>SQL</li>
-                  <li>React/Next.js</li>
-                  <li>Next.js Tailwind CSS</li>
-                  <li>Node.js/Express</li>
-                  <li>ethers.js/web3.js</li>
-                  <li>Foundry</li>
                 </ul>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-md border border-amber-200">
-                <h4 className="font-semibold text-amber-800 mb-2">Blockchain</h4>
-                <ul className="text-amber-700 space-y-2">
+              <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md border border-amber-200">
+                <h4 className="font-semibold text-amber-800 mb-2 text-sm sm:text-base">Frameworks & Tools</h4>
+                <ul className="text-amber-700 space-y-1 sm:space-y-2 text-xs sm:text-sm">
+                  <li>React/Next.js</li>
+                  <li>React Native/Expo</li>
+                  <li>Node.js/Express</li>
+                  <li>TensorFlow/PyTorch</li>
+                  <li>MongoDB/PostgreSQL</li>
+                  <li>ethers.js/web3.js</li>
+                  <li>Foundry/Hardhat</li>
+                </ul>
+              </div>
+              <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md border border-amber-200">
+                <h4 className="font-semibold text-amber-800 mb-2 text-sm sm:text-base">Blockchain</h4>
+                <ul className="text-amber-700 space-y-1 sm:space-y-2 text-xs sm:text-sm">
                   <li>Ethereum</li>
                   <li>Polygon</li>
                   <li>Binance Smart Chain</li>
@@ -197,14 +203,25 @@ export default function Home() {
                   <li>Layer 2 Solutions</li>
                 </ul>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-md border border-amber-200">
-                <h4 className="font-semibold text-amber-800 mb-2">Security</h4>
-                <ul className="text-amber-700 space-y-2">
+              <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md border border-amber-200">
+                <h4 className="font-semibold text-amber-800 mb-2 text-sm sm:text-base">Security</h4>
+                <ul className="text-amber-700 space-y-1 sm:space-y-2 text-xs sm:text-sm">
                   <li>Smart Contract Auditing</li>
                   <li>Penetration Testing</li>
                   <li>Vulnerability Assessment</li>
                   <li>Security Research</li>
                   <li>Threat Modeling</li>
+                </ul>
+              </div>
+              <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md border border-amber-200">
+                <h4 className="font-semibold text-amber-800 mb-2 text-sm sm:text-base">AI/ML & Mobile</h4>
+                <ul className="text-amber-700 space-y-1 sm:space-y-2 text-xs sm:text-sm">
+                  <li>Machine Learning</li>
+                  <li>Gemini AI Integration</li>
+                  <li>Content Generation</li>
+                  <li>Sports Analytics</li>
+                  <li>Mobile App Development</li>
+                  <li>Cross-platform Solutions</li>
                 </ul>
               </div>
             </div>
@@ -213,8 +230,8 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-12 sm:py-16 md:py-20 bg-amber-100">
-        <div className="container mx-auto px-4">
+      <section id="services" className="py-8 sm:py-12 md:py-16 lg:py-20 bg-amber-100">
+        <div className="container mx-auto px-3 sm:px-4">
           <div className="text-center mb-16">
             <h2 className="text-2xl sm:text-3xl font-bold text-amber-900">My Services</h2>
             <div className="h-1 w-20 bg-amber-600 mx-auto mt-4 mb-8"></div>
@@ -224,7 +241,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
             <div className="bg-white p-8 rounded-lg shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
               <div className="w-14 h-14 bg-amber-700 rounded-lg flex items-center justify-center mb-6">
                 <Code className="h-7 w-7 text-amber-50" />
@@ -322,8 +339,8 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-12 sm:py-16 md:py-20 bg-amber-50">
-        <div className="container mx-auto px-4">
+      <section id="projects" className="py-8 sm:py-12 md:py-16 lg:py-20 bg-amber-50">
+        <div className="container mx-auto px-3 sm:px-4">
           <div className="text-center mb-16">
             <h2 className="text-2xl sm:text-3xl font-bold text-amber-900">Featured Projects</h2>
             <div className="h-1 w-20 bg-amber-600 mx-auto mt-4 mb-8"></div>
@@ -332,7 +349,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {/* Minaret Project */}
             <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow relative">
               {/* Status Indicator */}
@@ -409,6 +426,87 @@ export default function Home() {
                     className="w-full flex justify-center"
                   >
                     View Project
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Sports Analysis Pro Project */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow relative">
+              {/* Status Indicator */}
+              <div className="absolute top-3 right-3 bg-amber-500 text-white text-xs font-medium px-2.5 py-1 rounded-full flex items-center">
+                <Clock className="h-3.5 w-3.5 mr-1" />
+                In development
+              </div>
+              <div className="h-48 bg-amber-800 flex items-center justify-center">
+                <BarChart className="h-16 w-16 text-amber-100" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-amber-800 mb-2">Sports Analysis Pro</h3>
+                <p className="text-sm sm:text-base text-amber-700 mb-4">
+                  An advanced AI-powered sports performance analysis platform with Gemini integration. Supports
+                  comprehensive analysis for soccer, American football, basketball, baseball, gym and fitness workouts.
+                  Provides detailed performance insights, training recommendations, and progress tracking for athletes
+                  and coaches.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">AI</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Gemini</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Sports Analytics</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">
+                    Performance Analysis
+                  </span>
+                </div>
+                <Button
+                  variant="outline"
+                  className="w-full border-amber-600 text-amber-800 hover:bg-amber-100 bg-transparent"
+                >
+                  <Link
+                    href="https://github.com/0xQuilox/coachmini"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex justify-center"
+                  >
+                    View on GitHub
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Vi-craft Project */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow relative">
+              {/* Status Indicator */}
+              <div className="absolute top-3 right-3 bg-amber-500 text-white text-xs font-medium px-2.5 py-1 rounded-full flex items-center">
+                <Clock className="h-3.5 w-3.5 mr-1" />
+                In development
+              </div>
+              <div className="h-48 bg-amber-800 flex items-center justify-center">
+                <FileText className="h-16 w-16 text-amber-100" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-amber-800 mb-2">Vi-craft</h3>
+                <p className="text-sm sm:text-base text-amber-700 mb-4">
+                  An AI-powered content generation platform designed for businesses, firms, and content creators.
+                  Streamlines the creation of blogs, newsletters, content scripts, and post captions using advanced AI
+                  algorithms. Empowers users to generate high-quality, engaging content efficiently and consistently.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">AI</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Content Generation</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Business Tools</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Content Creation</span>
+                </div>
+                <Button
+                  variant="outline"
+                  className="w-full border-amber-600 text-amber-800 hover:bg-amber-100 bg-transparent"
+                >
+                  <Link
+                    href="https://github.com/0xQuilox/vi-craft"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex justify-center"
+                  >
+                    View on GitHub
                   </Link>
                 </Button>
               </div>
@@ -1046,8 +1144,8 @@ export default function Home() {
       </section>
 
       {/* Contact Section - Updated to show only social links and email */}
-      <section id="contact" className="py-12 sm:py-16 md:py-20 bg-amber-800 text-amber-50">
-        <div className="container mx-auto px-4">
+      <section id="contact" className="py-8 sm:py-12 md:py-16 lg:py-20 bg-amber-800 text-amber-50">
+        <div className="container mx-auto px-3 sm:px-4">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold">Get In Touch</h2>
             <div className="h-1 w-20 bg-amber-400 mx-auto mt-4 mb-8"></div>
@@ -1057,7 +1155,7 @@ export default function Home() {
           </div>
 
           <div className="max-w-3xl mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
               <a
                 href="https://github.com/0xQuilox"
                 target="_blank"
@@ -1105,13 +1203,13 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-amber-900 text-amber-200 py-12">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
-            <div className="mb-6 md:mb-0">
-              <h2 className="text-xl sm:text-2xl font-bold text-amber-100">Miftahudeen Tajudeen</h2>
-              <p className="mt-2 text-sm sm:text-base text-center sm:text-left">
-                Fullstack web application, blockchain developer and security researcher
+      <footer className="bg-amber-900 text-amber-200 py-8 sm:py-12">
+        <div className="container mx-auto px-3 sm:px-4">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-6">
+            <div className="text-center sm:text-left mb-4 sm:mb-0">
+              <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-amber-100">Miftahudeen Tajudeen</h2>
+              <p className="mt-2 text-xs sm:text-sm lg:text-base">
+                Fullstack web application, mobile app, AI/ML developer, blockchain developer and security researcher
               </p>
             </div>
             <div className="flex space-x-4 sm:space-x-6">
