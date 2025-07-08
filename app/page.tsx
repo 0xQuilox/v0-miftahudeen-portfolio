@@ -117,13 +117,19 @@ export default function Home() {
                 mitigating risks in mission-critical applications.
               </p>
               <div className="flex gap-4 mt-8">
-                <Button variant="outline" className="rounded-full border-amber-600 text-amber-800 hover:bg-amber-100">
+                <Button
+                  variant="outline"
+                  className="rounded-full border-amber-600 text-amber-800 hover:bg-amber-100 bg-transparent"
+                >
                   <Github className="mr-2 h-4 w-4" />
                   <Link href="https://github.com/0xQuilox" target="_blank" rel="noopener noreferrer">
                     GitHub
                   </Link>
                 </Button>
-                <Button variant="outline" className="rounded-full border-amber-600 text-amber-800 hover:bg-amber-100">
+                <Button
+                  variant="outline"
+                  className="rounded-full border-amber-600 text-amber-800 hover:bg-amber-100 bg-transparent"
+                >
                   <Linkedin className="mr-2 h-4 w-4" />
                   <Link
                     href="https://www.linkedin.com/in/miftahudeen-tajudeen-a18179366"
@@ -133,7 +139,10 @@ export default function Home() {
                     LinkedIn
                   </Link>
                 </Button>
-                <Button variant="outline" className="rounded-full border-amber-600 text-amber-800 hover:bg-amber-100">
+                <Button
+                  variant="outline"
+                  className="rounded-full border-amber-600 text-amber-800 hover:bg-amber-100 bg-transparent"
+                >
                   <Twitter className="mr-2 h-4 w-4" />
                   <Link href="https://x.com/TrQuilox87" target="_blank" rel="noopener noreferrer">
                     Twitter
@@ -292,7 +301,10 @@ export default function Home() {
                   <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">E-commerce</span>
                   <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Food Delivery</span>
                 </div>
-                <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
+                <Button
+                  variant="outline"
+                  className="w-full border-amber-600 text-amber-800 hover:bg-amber-100 bg-transparent"
+                >
                   <Link
                     href="https://v0-webpage-clone-seven.vercel.app/"
                     target="_blank"
@@ -329,7 +341,10 @@ export default function Home() {
                   <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Tech Specs</span>
                   <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Comparison Tool</span>
                 </div>
-                <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
+                <Button
+                  variant="outline"
+                  className="w-full border-amber-600 text-amber-800 hover:bg-amber-100 bg-transparent"
+                >
                   <Link
                     href="https://omicron-three.vercel.app/"
                     target="_blank"
@@ -364,7 +379,10 @@ export default function Home() {
                   <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Web Scraping</span>
                   <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Crypto</span>
                 </div>
-                <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
+                <Button
+                  variant="outline"
+                  className="w-full border-amber-600 text-amber-800 hover:bg-amber-100 bg-transparent"
+                >
                   <Link
                     href="https://github.com/0xQuilox/Thirty-dias/blob/main/Aizen.py"
                     target="_blank"
@@ -399,7 +417,10 @@ export default function Home() {
                   <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">USDC</span>
                   <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Smart Contracts</span>
                 </div>
-                <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
+                <Button
+                  variant="outline"
+                  className="w-full border-amber-600 text-amber-800 hover:bg-amber-100 bg-transparent"
+                >
                   <Link
                     href="https://github.com/0xQuilox/n3-submanager"
                     target="_blank"
@@ -434,7 +455,10 @@ export default function Home() {
                   <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">USDC</span>
                   <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Payments</span>
                 </div>
-                <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
+                <Button
+                  variant="outline"
+                  className="w-full border-amber-600 text-amber-800 hover:bg-amber-100 bg-transparent"
+                >
                   <Link
                     href="https://v0-quillox-portfolio.vercel.app/"
                     target="_blank"
@@ -469,7 +493,10 @@ export default function Home() {
                   <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">React</span>
                   <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Tracking System</span>
                 </div>
-                <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
+                <Button
+                  variant="outline"
+                  className="w-full border-amber-600 text-amber-800 hover:bg-amber-100 bg-transparent"
+                >
                   <Link
                     href="https://v0-medira-alpha.vercel.app/"
                     target="_blank"
@@ -504,7 +531,10 @@ export default function Home() {
                   <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Next.js</span>
                   <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Algorithm</span>
                 </div>
-                <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
+                <Button
+                  variant="outline"
+                  className="w-full border-amber-600 text-amber-800 hover:bg-amber-100 bg-transparent"
+                >
                   <Link
                     href="https://v0-flames-d.vercel.app/"
                     target="_blank"
@@ -539,9 +569,169 @@ export default function Home() {
                   <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">React</span>
                   <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">API Integration</span>
                 </div>
-                <Button variant="outline" className="w-full border-amber-600 text-amber-800 hover:bg-amber-100">
+                <Button
+                  variant="outline"
+                  className="w-full border-amber-600 text-amber-800 hover:bg-amber-100 bg-transparent"
+                >
                   <Link
                     href="https://v0-playsion.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex justify-center"
+                  >
+                    View Project
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Ruggard Project */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow relative">
+              {/* Status Indicator */}
+              <div className="absolute top-3 right-3 bg-green-500 text-white text-xs font-medium px-2.5 py-1 rounded-full flex items-center">
+                <CheckCircle className="h-3.5 w-3.5 mr-1" />
+                Completed
+              </div>
+              <div className="h-48 bg-amber-800 flex items-center justify-center">
+                <Shield className="h-16 w-16 text-amber-100" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-amber-800 mb-2">Ruggard</h3>
+                <p className="text-sm sm:text-base text-amber-700 mb-4">
+                  A Twitter (X) bot that responds to replies containing "riddle me this" or mentions of the bot's handle
+                  under a tweet. It analyzes the trustworthiness of the original tweet's author and posts a concise
+                  summary. The bot evaluates account age, follower/following ratio, bio content, engagement patterns,
+                  recent tweet sentiment, and checks if the author is followed by trusted accounts.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Python</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Twitter Bot</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">AI Analysis</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Security</span>
+                </div>
+                <Button
+                  variant="outline"
+                  className="w-full border-amber-600 text-amber-800 hover:bg-amber-100 bg-transparent"
+                >
+                  <Link
+                    href="https://github.com/0xQuilox/ruggard-miftah"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex justify-center"
+                  >
+                    View on GitHub
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Ofi Project */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow relative">
+              {/* Status Indicator */}
+              <div className="absolute top-3 right-3 bg-green-500 text-white text-xs font-medium px-2.5 py-1 rounded-full flex items-center">
+                <CheckCircle className="h-3.5 w-3.5 mr-1" />
+                Completed
+              </div>
+              <div className="h-48 bg-amber-800 flex items-center justify-center">
+                <ShoppingBag className="h-16 w-16 text-amber-100" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-amber-800 mb-2">Ofi</h3>
+                <p className="text-sm sm:text-base text-amber-700 mb-4">
+                  A cutting-edge web application that revolutionizes the Nigerian fashion industry by connecting
+                  customers with skilled local tailors through AI-powered measurements, real-time communication, and
+                  secure payment processing. Bridging the gap between traditional craftsmanship and modern technology.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Next.js</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">AI</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Fashion</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Payment Processing</span>
+                </div>
+                <Button
+                  variant="outline"
+                  className="w-full border-amber-600 text-amber-800 hover:bg-amber-100 bg-transparent"
+                >
+                  <Link
+                    href="https://github.com/Abdullahi-200/ofi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex justify-center"
+                  >
+                    View on GitHub
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Layla Project */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow relative">
+              {/* Status Indicator */}
+              <div className="absolute top-3 right-3 bg-green-500 text-white text-xs font-medium px-2.5 py-1 rounded-full flex items-center">
+                <CheckCircle className="h-3.5 w-3.5 mr-1" />
+                Completed
+              </div>
+              <div className="h-48 bg-amber-800 flex items-center justify-center">
+                <Search className="h-16 w-16 text-amber-100" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-amber-800 mb-2">Layla</h3>
+                <p className="text-sm sm:text-base text-amber-700 mb-4">
+                  An AI/ML model built for offering repair solutions and tips for phones, laptops, gaming consoles and
+                  other mobile accessories to users. Leverages machine learning algorithms to provide intelligent
+                  diagnostics and step-by-step repair guidance for various electronic devices.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">AI/ML</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Python</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Repair Solutions</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Mobile Tech</span>
+                </div>
+                <Button
+                  variant="outline"
+                  className="w-full border-amber-600 text-amber-800 hover:bg-amber-100 bg-transparent"
+                >
+                  <Link
+                    href="https://github.com/0xQuilox/Layla"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex justify-center"
+                  >
+                    View on GitHub
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Xentinel Solutions Project */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow relative">
+              {/* Status Indicator */}
+              <div className="absolute top-3 right-3 bg-green-500 text-white text-xs font-medium px-2.5 py-1 rounded-full flex items-center">
+                <CheckCircle className="h-3.5 w-3.5 mr-1" />
+                Completed
+              </div>
+              <div className="h-48 bg-amber-800 flex items-center justify-center">
+                <Globe className="h-16 w-16 text-amber-100" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-amber-800 mb-2">Xentinel Solutions</h3>
+                <p className="text-sm sm:text-base text-amber-700 mb-4">
+                  Bridges the digital divide in Nigeria and Africa by delivering affordable, innovative solutions in
+                  mobile electronics, internet networking, and cybersecurity. A comprehensive platform showcasing
+                  cutting-edge technology services designed to empower communities across the continent.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Next.js</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Cybersecurity</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Networking</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Mobile Electronics</span>
+                </div>
+                <Button
+                  variant="outline"
+                  className="w-full border-amber-600 text-amber-800 hover:bg-amber-100 bg-transparent"
+                >
+                  <Link
+                    href="https://xentinel-eight.vercel.app"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full flex justify-center"
