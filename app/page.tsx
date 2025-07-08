@@ -96,25 +96,30 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-semibold text-amber-800 mb-4">My Journey</h3>
               <p className="text-amber-700 mb-6">
-                I design and deploy decentralized applications (dApps) and smart contracts, leveraging my deep
-                understanding of Ethereum Virtual Machine (EVM) ecosystems, Solidity, and modern web3 frameworks. My
-                fullstack proficiency spans front-end (React, TypeScript) and back-end (Node.js, Python, Go)
-                development, ensuring seamless, user-centric solutions that bridge traditional web and blockchain
-                technologies.
+                I design and deploy comprehensive software solutions spanning web applications, mobile apps, and
+                decentralized applications (dApps). My expertise encompasses full-stack web development using React,
+                Next.js, Node.js, and modern frameworks, alongside cross-platform mobile development with React Native
+                and Expo. I specialize in AI/ML development and integration, creating intelligent systems for
+                diagnostics, automation, and predictive analytics. Additionally, I streamline business operations
+                through workflow automation using Zapier and n8n, while maintaining deep proficiency in blockchain
+                technologies, Solidity, and EVM ecosystems for secure, user-centric solutions.
               </p>
               <p className="text-amber-700 mb-6">
-                In my role as an EVM Smart Contract Auditor, I specialize in identifying vulnerabilities and ensuring
-                the integrity of blockchain-based systems. By conducting rigorous code reviews and stress-testing smart
-                contracts, I help organizations deploy secure, gas-optimized solutions that withstand sophisticated
-                attacks. My audits are grounded in best practices and informed by the latest advancements in blockchain
-                security.
+                In my role as an EVM Smart Contract Auditor and AI/ML Developer, I specialize in identifying
+                vulnerabilities in blockchain systems while developing intelligent automation solutions. My AI/ML
+                expertise includes building models for device diagnostics, automated analysis, and business process
+                optimization. I conduct rigorous code reviews and stress-testing of smart contracts, helping
+                organizations deploy secure, gas-optimized solutions. My work bridges traditional software development
+                with cutting-edge AI technologies and blockchain security, ensuring robust, intelligent systems that
+                withstand sophisticated attacks.
               </p>
               <p className="text-amber-700 mb-6">
-                As a Penetration Tester and API Security Specialist, I proactively uncover vulnerabilities in systems,
-                networks, and APIs before they can be exploited. My approach combines manual testing, automated tools,
+                As a Penetration Tester, API Security Specialist, and Business Automation Expert, I proactively secure
+                systems while optimizing operational workflows. My approach combines manual testing, automated tools,
                 and custom scripts to simulate real-world attacks, delivering actionable insights to fortify defenses. I
-                am particularly adept at securing RESTful and GraphQL APIs, ensuring compliance with OWASP standards and
-                mitigating risks in mission-critical applications.
+                excel at securing RESTful and GraphQL APIs, ensuring OWASP compliance, while simultaneously implementing
+                business workflow automation using Zapier and n8n to streamline operations, reduce manual tasks, and
+                improve efficiency across organizations.
               </p>
               <div className="flex gap-4 mt-8">
                 <Button
@@ -263,6 +268,55 @@ export default function Home() {
                 custom scripts, with special focus on RESTful and GraphQL API security and OWASP compliance.
               </p>
             </div>
+
+            {/* New Service Cards */}
+            <div className="bg-white p-8 rounded-lg shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
+              <div className="w-14 h-14 bg-amber-700 rounded-lg flex items-center justify-center mb-6">
+                <Globe className="h-7 w-7 text-amber-50" />
+              </div>
+              <h3 className="text-xl font-semibold text-amber-800 mb-4">Web Application Development</h3>
+              <p className="text-amber-700">
+                Full-stack web application development using modern frameworks like React, Next.js, Node.js, and
+                Express. Creating responsive, scalable, and user-friendly applications with robust backend systems and
+                seamless user experiences.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
+              <div className="w-14 h-14 bg-amber-700 rounded-lg flex items-center justify-center mb-6">
+                <BarChart className="h-7 w-7 text-amber-50" />
+              </div>
+              <h3 className="text-xl font-semibold text-amber-800 mb-4">AI/ML Development & Integration</h3>
+              <p className="text-amber-700">
+                Development and integration of AI/ML models for various applications including intelligent diagnostics,
+                automated analysis, and predictive systems. Expertise in Python, machine learning frameworks, and
+                AI-powered solutions.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
+              <div className="w-14 h-14 bg-amber-700 rounded-lg flex items-center justify-center mb-6">
+                <Code className="h-7 w-7 text-amber-50" />
+              </div>
+              <h3 className="text-xl font-semibold text-amber-800 mb-4">Business Workflow Automation</h3>
+              <p className="text-amber-700">
+                Streamlining business processes through automation using Zapier and n8n. Creating efficient workflows
+                that connect different applications, automate repetitive tasks, and improve operational efficiency for
+                businesses.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-md border border-amber-200 hover:shadow-lg transition-shadow">
+              <div className="w-14 h-14 bg-amber-700 rounded-lg flex items-center justify-center mb-6">
+                <Smartphone className="h-7 w-7 text-amber-50" />
+              </div>
+              <h3 className="text-xl font-semibold text-amber-800 mb-4">Mobile App Development</h3>
+              <p className="text-amber-700">
+                Cross-platform mobile application development using React Native and Expo. Building native-quality
+                mobile apps for iOS and Android with shared codebases, ensuring consistent user experiences across
+                platforms.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -279,6 +333,86 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8">
+            {/* Minaret Project */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow relative">
+              {/* Status Indicator */}
+              <div className="absolute top-3 right-3 bg-green-500 text-white text-xs font-medium px-2.5 py-1 rounded-full flex items-center">
+                <CheckCircle className="h-3.5 w-3.5 mr-1" />
+                Completed
+              </div>
+              <div className="h-48 bg-amber-800 flex items-center justify-center">
+                <Heart className="h-16 w-16 text-amber-100" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-amber-800 mb-2">Minaret</h3>
+                <p className="text-sm sm:text-base text-amber-700 mb-4">
+                  A prototype of an Electronic Health Record System for a hospital. Streamlines patient data management,
+                  medical history tracking, appointment scheduling, and healthcare workflow optimization. Designed to
+                  enhance healthcare delivery through digital transformation and secure patient information management.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Next.js</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Healthcare</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">EHR</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">
+                    Hospital Management
+                  </span>
+                </div>
+                <Button
+                  variant="outline"
+                  className="w-full border-amber-600 text-amber-800 hover:bg-amber-100 bg-transparent"
+                >
+                  <Link
+                    href="https://mnrtehr.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex justify-center"
+                  >
+                    View Project
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Trivela Ace Project */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow relative">
+              {/* Status Indicator */}
+              <div className="absolute top-3 right-3 bg-green-500 text-white text-xs font-medium px-2.5 py-1 rounded-full flex items-center">
+                <CheckCircle className="h-3.5 w-3.5 mr-1" />
+                Completed
+              </div>
+              <div className="h-48 bg-amber-800 flex items-center justify-center">
+                <Award className="h-16 w-16 text-amber-100" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-amber-800 mb-2">Trivela Ace</h3>
+                <p className="text-sm sm:text-base text-amber-700 mb-4">
+                  Create Your Solo Trivia Quiz. Enter a topic, select difficulty, and test your knowledge! An
+                  interactive quiz platform that generates personalized trivia questions based on user preferences,
+                  offering an engaging way to learn and challenge yourself across various subjects and difficulty
+                  levels.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Next.js</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Quiz</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Trivia</span>
+                  <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full">Education</span>
+                </div>
+                <Button
+                  variant="outline"
+                  className="w-full border-amber-600 text-amber-800 hover:bg-amber-100 bg-transparent"
+                >
+                  <Link
+                    href="https://trivela-five.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex justify-center"
+                  >
+                    View Project
+                  </Link>
+                </Button>
+              </div>
+            </div>
             {/* Stockfort Project */}
             <div className="bg-white rounded-lg overflow-hidden shadow-md border border-amber-200 hover:shadow-lg transition-shadow relative">
               {/* Status Indicator */}
